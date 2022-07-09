@@ -97,7 +97,7 @@ const Header = () => {
                     </div>
                     {/* Property type end */}
                     <input
-                      className="btn w-full max-w-xs"
+                      className="btn w-full max-w-xs mt-9"
                       type="submit"
                       value="Search"
                     />
