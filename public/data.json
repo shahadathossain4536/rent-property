@@ -1,0 +1,18 @@
+[
+    {
+        "addressLine1":"5500 Grand Lake Dr",
+"city":"San Antonio",
+"state":"TX",
+"zipCode":"78244",
+"county":"Bexar",
+"bedrooms":3,
+"bathrooms":2,
+"lotSize":8850,
+"yearBuilt":1973,
+"propertyType":"Single Family",
+"propertyType":"Single Family",
+"id":"5500-Grand-Lake-Dr,-San-Antonio,-TX-78244",
+"longitude":-98.351442,
+"latitude":29.475962
+    }
+]
