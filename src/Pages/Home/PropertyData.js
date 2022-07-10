@@ -15,11 +15,12 @@ const PropertyData = ({ property }) => {
     propertyName,
     propertyType,
     propertyPrice,
+    img,
   } = property;
   return (
     <div class="card w-96 bg-base-100 shadow-xl">
       <figure>
-        <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
+        <img className="w-[400px] h-[225px]" src={img} alt="Shoes" />
       </figure>
       <div class="card-body">
         <h2 class="card-title">
