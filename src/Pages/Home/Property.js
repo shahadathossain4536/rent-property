@@ -215,21 +215,21 @@ const Property = () => {
     <div className="flex justify-center items-center bg-base-200">
       <div className="">
         <div className="mb-10  mx-10">
-          <div class="p-10 rounded-md bg-base-100 shadow-xl ">
-            <div class="">
+          <div className="p-10 rounded-md bg-base-100 shadow-xl ">
+            <div className="">
               <div>
-                <h2 class="card-title"></h2>
+                <h2 className="card-title"></h2>
                 <form className="grid-cols-2 grid lg:grid-cols-5  justify-center items-center gap-5">
                   {/* Location start */}
-                  <div class="form-control w-full max-w-xs">
-                    <label class="label">
-                      <span class="label-text">Location</span>
+                  <div className="form-control w-full max-w-xs">
+                    <label className="label">
+                      <span className="label-text">Location</span>
                     </label>
                     <input
                       type="text"
                       name="location"
                       placeholder="location"
-                      class="input input-bordered w-full max-w-xs"
+                      className="input input-bordered w-full max-w-xs"
                       onChange={(event) =>
                         setCity(event.target.value.toLowerCase())
                       }
@@ -237,26 +237,26 @@ const Property = () => {
                   </div>
                   {/* Location end */}
                   {/* Date start */}
-                  <div class="form-control w-full max-w-xs">
-                    <label class="label">
-                      <span class="label-text">Date</span>
+                  <div className="form-control w-full max-w-xs">
+                    <label className="label">
+                      <span className="label-text">Date</span>
                     </label>
                     <DatePicker
-                      class="input input-bordered w-full max-w-xs "
+                      className="input input-bordered w-full max-w-xs "
                       selected={startDate}
                       onChange={(date) => setStartDate(date)}
                     />
                   </div>
                   {/* Date end */}
                   {/* Price start */}
-                  <div class="form-control w-full max-w-xs ">
-                    <label class="label">
-                      <span class="label-text">Price</span>
+                  <div className="form-control w-full max-w-xs ">
+                    <label className="label">
+                      <span className="label-text">Price</span>
                     </label>
 
                     <select
                       name="price"
-                      class="select input input-bordered w-full max-w-xs"
+                      className="select input input-bordered w-full max-w-xs"
                       onChange={(event) => setPropertyPrice(event.target.value)}
                     >
                       <option value="">Price Range</option>
@@ -269,13 +269,13 @@ const Property = () => {
                   </div>
                   {/* Price end */}
                   {/* Property type start */}
-                  <div class="form-control w-full max-w-xs">
-                    <label class="label">
-                      <span class="label-text">Property Type </span>
+                  <div className="form-control w-full max-w-xs">
+                    <label className="label">
+                      <span className="label-text">Property Type </span>
                     </label>
                     <select
                       name="property"
-                      class="select input input-bordered w-full max-w-xs"
+                      className="select input input-bordered w-full max-w-xs"
                       onChange={(event) => setPropertyType(event.target.value)}
                     >
                       <option value="">Select Home</option>

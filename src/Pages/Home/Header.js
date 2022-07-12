@@ -17,11 +17,11 @@ const Header = () => {
   };
 
   return (
-    <div class="hero min-h-screen bg-base-200">
-      <div class="hero-content text-center">
-        <div class="max-w-full">
-          <h1 class="text-6xl font-bold">Search Your Next Home</h1>
-          <p class="py-6">
+    <div className="hero min-h-screen bg-base-200">
+      <div className="hero-content text-center">
+        <div className="max-w-full">
+          <h1 className="text-6xl font-bold">Search Your Next Home</h1>
+          <p className="py-6">
             Find new & featured property located in your local city.
           </p>
         </div>

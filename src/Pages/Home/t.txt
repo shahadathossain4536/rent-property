@@ -4,40 +4,40 @@
       >
         {/* Location start */}
 
-        <div class="form-control w-full max-w-xs ">
-          <label class="label">
-            <span class="label-text">Location</span>
+        <div className="form-control w-full max-w-xs ">
+          <label className="label">
+            <span className="label-text">Location</span>
           </label>
           <input
             type="text"
             name="location"
             placeholder="Location"
-            class="input input-bordered w-full max-w-xs"
+            className="input input-bordered w-full max-w-xs"
             {...register("location")}
           />
         </div>
         {/* Location end */}
         {/* Date start */}
-        <div class="form-control w-full max-w-xs">
-          <label class="label">
-            <span class="label-text">Date</span>
+        <div className="form-control w-full max-w-xs">
+          <label className="label">
+            <span className="label-text">Date</span>
           </label>
           <DatePicker
-            class="input input-bordered w-full max-w-xs "
+            className="input input-bordered w-full max-w-xs "
             selected={startDate}
             onChange={(date) => setStartDate(date)}
           />
         </div>
         {/* Date end */}
         {/* Price start */}
-        <div class="form-control w-full max-w-xs ">
-          <label class="label">
-            <span class="label-text">Price</span>
+        <div className="form-control w-full max-w-xs ">
+          <label className="label">
+            <span className="label-text">Price</span>
           </label>
 
           <select
             name="price"
-            class="select input input-bordered w-full max-w-xs"
+            className="select input input-bordered w-full max-w-xs"
             {...register("price")}
           >
             <option>No Min</option>
@@ -50,13 +50,13 @@
         </div>
         {/* Price end */}
         {/* Property type start */}
-        <div class="form-control w-full max-w-xs">
-          <label class="label">
-            <span class="label-text">Property Type </span>
+        <div className="form-control w-full max-w-xs">
+          <label className="label">
+            <span className="label-text">Property Type </span>
           </label>
           <select
             name="property"
-            class="select input input-bordered w-full max-w-xs"
+            className="select input input-bordered w-full max-w-xs"
             {...register("property")}
           >
             <option disabled>Select Home</option>
@@ -74,7 +74,9 @@
 
 
 
-  {propertys.slice(0, 9).map((property) => (
+  {
+    propertys && propertys.length >0 ?.
+    propertys.slice(0, 9).map((property) => (
             <PropertyData key={property._id} property={property}></PropertyData>
           ))}
 

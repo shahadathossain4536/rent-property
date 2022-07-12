@@ -18,14 +18,14 @@ const PropertyData = ({ property }) => {
     img,
   } = property;
   return (
-    <div class="card w-96 bg-base-100 shadow-xl">
+    <div className="card w-96 bg-base-100 shadow-xl">
       <figure>
         <img className="w-[400px] h-[225px]" src={img} alt="Shoes" />
       </figure>
-      <div class="card-body">
-        <h2 class="card-title">
+      <div className="card-body">
+        <h2 className="card-title">
           {propertyName}
-          <div class="badge badge-secondary">NEW</div>
+          <div className="badge badge-secondary">NEW</div>
         </h2>
         <div className="">
           <p className="text-3xl">
@@ -34,7 +34,7 @@ const PropertyData = ({ property }) => {
           </p>
           <p className="text-sm text-gray-400 pt-3">{addressLine1}</p>
         </div>
-        <div class="divider my-0"></div>
+        <div className="divider my-0"></div>
         <div className="flex justify-evenly">
           <div className="flex justify-start ">
             <img
@@ -55,14 +55,14 @@ const PropertyData = ({ property }) => {
             <p className="pl-2">{bathrooms}bathrooms</p>
           </div>
         </div>
-        {/* <div class="card-actions justify-end">
-          <div class="badge badge-outline">Fashion</div>
-          <div class="badge badge-outline">Products</div>
+        {/* <div className="card-actions justify-end">
+          <div className="badge badge-outline">Fashion</div>
+          <div className="badge badge-outline">Products</div>
         </div> */}
       </div>
     </div>
 
-    // <div class="artboard artboard-horizontal phone-2">667×375</div>
+    // <div className="artboard artboard-horizontal phone-2">667×375</div>
   );
 };
 
