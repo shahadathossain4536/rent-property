@@ -1,0 +1,81 @@
+ <form
+        className="grid-cols-2 grid lg:grid-cols-5  justify-center items-center gap-5"
+        onSubmit={handleSubmit(onSubmit)}
+      >
+        {/* Location start */}
+
+        <div class="form-control w-full max-w-xs ">
+          <label class="label">
+            <span class="label-text">Location</span>
+          </label>
+          <input
+            type="text"
+            name="location"
+            placeholder="Location"
+            class="input input-bordered w-full max-w-xs"
+            {...register("location")}
+          />
+        </div>
+        {/* Location end */}
+        {/* Date start */}
+        <div class="form-control w-full max-w-xs">
+          <label class="label">
+            <span class="label-text">Date</span>
+          </label>
+          <DatePicker
+            class="input input-bordered w-full max-w-xs "
+            selected={startDate}
+            onChange={(date) => setStartDate(date)}
+          />
+        </div>
+        {/* Date end */}
+        {/* Price start */}
+        <div class="form-control w-full max-w-xs ">
+          <label class="label">
+            <span class="label-text">Price</span>
+          </label>
+
+          <select
+            name="price"
+            class="select input input-bordered w-full max-w-xs"
+            {...register("price")}
+          >
+            <option>No Min</option>
+            <option>$1000</option>
+            <option>$1500</option>
+            <option>$2000</option>
+            <option>$2500</option>
+            <option>$3000</option>
+          </select>
+        </div>
+        {/* Price end */}
+        {/* Property type start */}
+        <div class="form-control w-full max-w-xs">
+          <label class="label">
+            <span class="label-text">Property Type </span>
+          </label>
+          <select
+            name="property"
+            class="select input input-bordered w-full max-w-xs"
+            {...register("property")}
+          >
+            <option disabled>Select Home</option>
+            <option>Apartments</option>
+            <option>Houses</option>
+            <option>Townhouse</option>
+          </select>
+        </div>
+        {/* Property type end */}
+        <input
+          className="btn w-full max-w-xs mt-9"
+          type="submit"
+          value="Search"
+        />
+
+
+
+  {propertys.slice(0, 9).map((property) => (
+            <PropertyData key={property._id} property={property}></PropertyData>
+          ))}
+
+      </form>
