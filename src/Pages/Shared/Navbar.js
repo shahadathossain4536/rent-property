@@ -72,7 +72,6 @@ const Navbar = ({ children }) => {
         </div>
         {/* <!-- Page content here --> */}
         {children}
-        Content
       </div>
       <div className="drawer-side">
         <label for="my-drawer-3" className="drawer-overlay"></label>

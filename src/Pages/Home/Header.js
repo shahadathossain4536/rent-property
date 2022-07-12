@@ -17,7 +17,7 @@ const Header = () => {
   };
 
   return (
-    <div className="hero min-h-screen bg-base-200">
+    <div className="hero min-h-screen bg-base-200 mt-[-100px] mb-[-200px]">
       <div className="hero-content text-center">
         <div className="max-w-full">
           <h1 className="text-6xl font-bold">Search Your Next Home</h1>
